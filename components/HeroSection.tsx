@@ -18,7 +18,7 @@ const HeroSection = () => {
               favorite reads.
             </p>
             <Link href="/books/new">
-              <button className="library-cta-primary mt-4 flex items-center justify-center">
+              <button className="library-cta-primary mt-4 flex items-center justify-center cursor-pointer">
                 <span className=" text-3xl font-light mb-1 mr-2">+</span>
                 <span className=" text-[#212a3b]">Add new book</span>
               </button>
