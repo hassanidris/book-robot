@@ -1,5 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
+import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -49,6 +50,27 @@ const Navbar = () => {
             );
           })}
         </nav>
+        <div className="flex justify-end items-center gap-7.5 h-16 ">
+          <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button className="nav-link-base cursor-pointer hover:opacity-70">
+                Sign In
+              </button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button
+                className="text-white rounded-lg px-4 py-2 cursor-pointer transition-opacity hover:opacity-90"
+                style={{ backgroundColor: "var(--accent-warm)" }}
+              >
+                Sign Up
+              </button>
+            </SignUpButton>
+          </Show>
+
+          <Show when="signed-in">
+            <UserButton />
+          </Show>
+        </div>
       </div>
     </header>
   );
