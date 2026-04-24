@@ -24,13 +24,11 @@ const VoiceSelector = ({
   };
 
   const [selectedGender, setSelectedGender] = useState<"male" | "female">(
-    getInitialGender()
+    getInitialGender(),
   );
 
   const currentVoices =
-    selectedGender === "male"
-      ? voiceCategories.male
-      : voiceCategories.female;
+    selectedGender === "male" ? voiceCategories.male : voiceCategories.female;
 
   return (
     <div className={cn("space-y-6", className)}>
@@ -58,7 +56,7 @@ const VoiceSelector = ({
                 "w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors",
                 selectedGender === "male"
                   ? "border-[#663820] bg-[#f3e4c7]"
-                  : "border-gray-300 bg-white"
+                  : "border-gray-300 bg-white",
               )}
             >
               {selectedGender === "male" && (
@@ -91,7 +89,7 @@ const VoiceSelector = ({
                 "w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors",
                 selectedGender === "female"
                   ? "border-[#663820] bg-[#f3e4c7]"
-                  : "border-gray-300 bg-white"
+                  : "border-gray-300 bg-white",
               )}
             >
               {selectedGender === "female" && (
@@ -144,9 +142,7 @@ const VoiceSelector = ({
                       <div className="w-2 h-2 rounded-full bg-[#663820]" />
                     )}
                   </div>
-                  <span className="font-bold text-[#212a3b]">
-                    {voice.name}
-                  </span>
+                  <span className="font-bold text-[#212a3b]">{voice.name}</span>
                 </div>
                 <p className="text-xs text-[#777] leading-relaxed">
                   {voice.description}
