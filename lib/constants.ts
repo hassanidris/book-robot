@@ -73,7 +73,7 @@ export const sampleBooks = [
     title: "The Courage to Be Disliked",
     author: "Fumitake Koga & Ichiro Kishimi",
     slug: "the-courage-to-be-disliked",
-    coverURL: "https://covers.openlibrary.org/b/isbn/9781501197274-L.jpg",
+    coverURL: "https://covers.openlibrary.org/b/id/15163858-L.jpg",
     coverColor: "#f8f4e9",
   },
   {
@@ -82,6 +82,22 @@ export const sampleBooks = [
     author: "George Orwell",
     slug: "1984",
     coverURL: "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
+    coverColor: "#f8f4e9",
+  },
+  {
+    _id: "11",
+    title: "Rethinking the brain",
+    author: "Rima Shore",
+    slug: "rethinking-the-brain",
+    coverURL: "https://covers.openlibrary.org/b/id/3710920-L.jpg",
+    coverColor: "#f8f4e9",
+  },
+  {
+    _id: "12",
+    title: "Oracle JDeveloper 3 handbook",
+    author: "Paul Dorsey",
+    slug: "oracle-jdeveloper-3-handbook",
+    coverURL: "https://covers.openlibrary.org/b/id/61309-L.jpg",
     coverColor: "#f8f4e9",
   },
 ];
